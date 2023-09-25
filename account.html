@@ -55,7 +55,7 @@
                                 <a href="" class="header-contacts__phone">
                                     <span class="text16 medium-text">8 800 444 00 65</span>
                                 </a>
-                                <button class="header-contacts__btn m-btn m-btn-light-blue">
+                                <button data-modal="callModal" class="header-contacts__btn m-btn m-btn-light-blue">
                                     <span>Заказать звонок</span>
                                 </button>
 
@@ -71,7 +71,7 @@
                             <a href="" class="header-contacts__phone">
                                 <span class="text16 medium-text">8 800 444 00 65</span>
                             </a>
-                            <button class="header-contacts__btn m-btn m-btn-light-blue">
+                            <button data-modal="callModal" class="header-contacts__btn m-btn m-btn-light-blue">
                                 <span>Заказать звонок</span>
                             </button>
 
@@ -2058,7 +2058,7 @@
                             Ежедневно, с 8:00 до 18:00
                         </div>
                     </div>
-                    <button class="footer-contacts__btn m-btn m-btn-red-outline">
+                    <button data-modal="callModal" class="footer-contacts__btn m-btn m-btn-red-outline">
                         <span>Заказать звонок</span>
                     </button>
                 </div>
@@ -2183,6 +2183,91 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="modal" id="callModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text33 bold-text">
+                    Заказать обратный звонок
+                </div>
+
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (   )    -  -  ">
+                </fieldset>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label><span>Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Перезвоните мне</span>
+                </button>
+            </form>
+        </div>
+        <button class="modal__close _close-modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 1L1 33M1 1L33 33" stroke="white" stroke-width="1.3" stroke-linecap="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="modal" id="orderModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text33 bold-text">
+                    Заказать в 1 клик
+                </div>
+                <div class="modal__desc medium-text">
+                    Дрель-шуруповерт аккумуляторная MAKITA DF 347DWE14 В 1,5 А/ч
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <fieldset class="fg">
+                    <label>
+                        Ваше имя <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Как к вам обращаться?">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Email адрес <span>*</span>:
+                    </label>
+                    <input type="text" placeholder="Ваш email">
+                </fieldset>
+                <fieldset class="fg">
+                    <label>
+                        Номер телефона <span>*</span>:
+                    </label>
+                    <input type="tel" placeholder="+7 (   )    -  -  ">
+                </fieldset>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label><span>Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности</span></label>
+                </div>
+
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Купить</span>
+                </button>
+            </form>
+        </div>
+        <button class="modal__close _close-modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33 1L1 33M1 1L33 33" stroke="white" stroke-width="1.3" stroke-linecap="round" />
+            </svg>
+        </button>
     </div>
 
     <script src="js/libs.min.js"></script>
